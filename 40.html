@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Proposal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+            overflow: hidden;
+        }
+        .gif-container {
+            margin-bottom: 20px;
+        }
+        .gif-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+        .proposal-box {
+            text-align: center;
+            position: relative;
+        }
+        .hearts {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: float 3s infinite;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 50px;
+        }
+        .hearts:nth-child(2) {
+            animation-delay: 0.5s;
+            font-size: 60px;
+        }
+        .hearts:nth-child(3) {
+            animation-delay: 1s;
+            font-size: 40px;
+        }
+        @keyframes float {
+            0% {
+                transform: translate(-50%, -50%) scale(0.8);
+                opacity: 0.6;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translate(-50%, -150%) scale(1.2);
+                opacity: 0;
+            }
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .button-link {
+            text-decoration: none;
+        }
+        button {
+            background-color: #ff6b6b;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        button:hover {
+            transform: translateY(-10px) rotate(-5deg);
+            background-color: #ff4757;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        }
+        .no-button:hover {
+            transform: translateX(50px);
+            background-color: #ffc048;
+        }
+    </style>
+</head>
+<body>
+    <div class="gif-container">
+        <!-- Replace the URL below with the GIF you want -->
+        <img src="soch lo .gif" alt="Love GIF">
+    </div>
+    <div class="proposal-box">
+        <h1>Does that means 60% yes 40% no chalo aab bata v do</h1>
+        <div class="buttons">
+            <!-- Yes button links to yes.html -->
+            <a href="yes.html" class="button-link"><button>Yes! ❤️</button></a>
+            <!-- No button links to no.html -->
+          
+        </div>
+        <div class="hearts">💖</div>
+        <div class="hearts">💞</div>
+        <div class="hearts">💘</div>
+    </div>
+</body>
+</html>
